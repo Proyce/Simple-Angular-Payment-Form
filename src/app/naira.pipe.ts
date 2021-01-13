@@ -11,5 +11,4 @@ export class NairaPipe implements PipeTransform {
     }
     return value * 471.372;
   }
-
 }
