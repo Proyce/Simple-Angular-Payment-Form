@@ -43,4 +43,18 @@
   </div>
 </div>
 
+<div class="row">
+   <div class="form-group col">
+  <label>Dollar Amount </label>
+  <input type="number" class="form-control" (input)="onDollarChange($event.target.value)">
+  </div>
+
+  <div class="col">
+    <label for=""><b>Naira Amount</b></label>
+    <div>
+      {{naira | currency: 'NGN' }}
+    </div>
+  </div>
+</div>
+
 </div>
