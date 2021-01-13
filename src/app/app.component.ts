@@ -9,6 +9,7 @@ export class AppComponent {
   name: string;
   date: string;
   amount: number;
+  dollarAmount: number;
 
   onNameChange(value: string) {
     this.name = value;
@@ -20,5 +21,9 @@ export class AppComponent {
 
   onAmountChange(value: string) {
     this.amount = parseFloat(value);
+  }
+
+  onDollarChange(value: string) {
+    this.dollarAmount = parseFloat(value);
   }
 }

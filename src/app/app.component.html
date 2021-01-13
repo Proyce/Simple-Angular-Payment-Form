@@ -51,8 +51,8 @@
 
   <div class="col">
     <label for=""><b>Naira Amount</b></label>
-    <div>
-      {{naira | currency: 'NGN' }}
+    <div *ngIf="dollarAmount">
+      NGN {{dollarAmount | naira | number: '1.2-2'}}
     </div>
   </div>
 </div>

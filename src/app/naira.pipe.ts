@@ -5,8 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class NairaPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: any, ...args: any[]): any {
+    if (!value) {
+      return '';
+    }
+    return value * 471.372;
   }
 
 }
